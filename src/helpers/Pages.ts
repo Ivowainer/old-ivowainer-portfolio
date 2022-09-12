@@ -1,4 +1,9 @@
-import { AiOutlineHome, AiFillHome } from 'react-icons/ai'
+import { AiOutlineHome, AiFillHome, AiOutlineMail } from 'react-icons/ai'
+import { RiUserFill, RiUserLine } from 'react-icons/ri'
+import { HiOutlineAcademicCap, HiAcademicCap } from 'react-icons/hi'
+import { BsBriefcaseFill, BsBriefcase } from 'react-icons/bs'
+import { MdEmail } from 'react-icons/md'
+
 import { IconType } from 'react-icons'
 
 export interface Route {
@@ -17,20 +22,28 @@ export const PAGES: Route[] = [
         IconActive: AiFillHome,
         IconOutlined: AiOutlineHome,
     },
-    /* {
+    {
         name: 'About',
-        path: '/about'
+        path: '/about',
+        IconActive: RiUserFill,
+        IconOutlined: RiUserLine
     },
     {
         name: 'Education',
-        path: '/'
+        path: '/education',
+        IconActive: HiAcademicCap,
+        IconOutlined: HiOutlineAcademicCap
     },
     {
         name: 'Projects',
-        path: '/'
+        path: '/projects',
+        IconActive: BsBriefcaseFill,
+        IconOutlined: BsBriefcase
     },
     {
         name: 'Contact',
-        path: '/'
-    }, */
+        path: '/contact',
+        IconActive: MdEmail,
+        IconOutlined: AiOutlineMail
+    },
 ]

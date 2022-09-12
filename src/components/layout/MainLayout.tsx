@@ -4,10 +4,10 @@ import NavBar from "../ui/NavBar"
 
 interface MainLayoutProps {
   pageName: PagesNames;
+  children: React.ReactNode
 }
 
-const MainLayout: React.FC<React.PropsWithChildren<MainLayoutProps>> = ({ children, pageName }) => {
-  /* const [page, setPage] = useState<string>('') */
+const MainLayout = ({ children, pageName } : MainLayoutProps) => {
 
   return (
     <>
@@ -17,7 +17,7 @@ const MainLayout: React.FC<React.PropsWithChildren<MainLayoutProps>> = ({ childr
       </Head>
 
       <div className='flex'>
-        <aside className="h-screen sticky top-0">
+        <aside className="h-screen sticky top-0 border-r-2">
           <NavBar pageName={pageName} />
         </aside>
         
