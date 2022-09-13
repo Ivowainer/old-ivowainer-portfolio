@@ -16,12 +16,12 @@ const MainLayout = ({ children, pageName } : MainLayoutProps) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className='flex'>
+      <div className='flex w-screen'>
         <aside className="h-screen sticky top-0 border-r-2">
           <NavBar pageName={pageName} />
         </aside>
         
-        <main>
+        <main className="w-full">
           { children }
         </main>
       </div>

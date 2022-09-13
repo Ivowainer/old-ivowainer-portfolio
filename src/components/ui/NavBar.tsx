@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { PAGES, PagesNames } from '../../helpers/Pages';
 import IconPath from './IconPath';
+import { BsSun } from 'react-icons/bs'
 
 interface NavBarProps {
     pageName: PagesNames;
@@ -8,16 +8,18 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
     return (
-        <div className='flex flex-col items-center px-7 py-8 gap-20 h-full'>
-            <h1 className='font-bold text-3xl'>ICW</h1>
+        <div className='flex flex-col justify-between items-center px-6 py-8 gap-20 h-full text-gray-500'>
+            <h1 className='font-bold text-3xl text-cyan-500'>ICW</h1>
 
-            <nav className='flex flex-col text-2xl justify-between h-1/2'>
+            <nav className='flex flex-col justify-between h-1/2 text-2xl'>
                 {PAGES.map(page => (
-                    <>
-                        <IconPath page={page} currentPage={pageName} />
-                    </>
+                    <IconPath  key={page.name} page={page} currentPage={pageName} />
                 ))}
             </nav>
+
+            <div className="text-xl px-1 py-1 border border-gray-500 rounded-md">
+                <BsSun />
+            </div>
         </div>
     )
 }

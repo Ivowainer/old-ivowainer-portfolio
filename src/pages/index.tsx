@@ -4,9 +4,22 @@ import MainLayout from '../components/layout/MainLayout'
 const Home: NextPage = () => {
   return (
     <MainLayout pageName='Home'>
-      <div className='h-screen flex items-center justifty-center'>
-        <p className='text-3xl font-bold'>Ivan Campos Wainer</p>
-        <p>Web Developer and UI Designer</p>
+      <div className='relative h-screen flex flex-col w-full items-center justify-center text-gray-500'>
+        <p className='text-4xl font-bold'>Ivan <span className='text-cyan-500'>Campos</span> Wainer</p>
+        <p className='text-xl font-semibold'><span className='text-cyan-500'>Frontend</span> Web Developer</p>
+
+        <div className="circles">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </MainLayout>
   )

@@ -12,13 +12,16 @@ const IconPath: React.FC<IconPathProps> = ({ page, currentPage }) => {
     return (
         <div>
             <Link href={path}>
-                <a>
+                
                     {name === currentPage ? (
-                        <IconActive />
+                        <a className="text-cyan-500">
+                            <IconActive />
+                        </a>
                     ) : (
-                        <IconOutlined />
+                        <a>
+                            <IconOutlined />
+                        </a>
                     )}
-                </a>
             </Link>
         </div>
     )
