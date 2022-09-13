@@ -8,7 +8,53 @@ const Home: NextPage = () => {
         <p className='text-4xl font-bold'>Ivan <span className='text-cyan-500'>Campos</span> Wainer</p>
         <p className='text-xl font-semibold'><span className='text-cyan-500'>Frontend</span> Web Developer</p>
 
-        <div className="circles">
+        <div className="circlesTop">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div className="">
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+        <p>HOLAS HOLAs</p>
+
+        <div className="circlesBottom">
           <div></div>
           <div></div>
           <div></div>

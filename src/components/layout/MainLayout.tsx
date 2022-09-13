@@ -16,7 +16,7 @@ const MainLayout = ({ children, pageName } : MainLayoutProps) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <div className='flex w-screen'>
+      <div className='flex'>
         <aside className="h-screen sticky top-0 border-r-2">
           <NavBar pageName={pageName} />
         </aside>
