@@ -9,7 +9,7 @@ interface NavBarProps {
 const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
     return (
         <div className='flex flex-col justify-between items-center px-6 py-8 gap-20 h-full text-gray-500'>
-            <h1 className='font-bold text-3xl text-cyan-500'>ICW</h1>
+            <h1 className='font-bold text-3xl text-indigo-500'>ICW</h1>
 
             <nav className='flex flex-col justify-between h-1/2 text-2xl'>
                 {PAGES.map(page => (

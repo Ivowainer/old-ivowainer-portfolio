@@ -14,9 +14,10 @@ const MainLayout = ({ children, pageName } : MainLayoutProps) => {
       <Head>
         <title>{`${pageName} | Ivan Campos Wainer`}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
       </Head>
 
-      <div className='flex'>
+      <div className='flex '>
         <aside className="h-screen sticky top-0 border-r-2">
           <NavBar pageName={pageName} />
         </aside>

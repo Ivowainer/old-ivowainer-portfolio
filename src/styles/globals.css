@@ -9,7 +9,7 @@
 }
 
 /* ------ Circles UP ------ */
-.circles{
+.circlesTop{
     position: absolute;
     top: 0;
     left: 0;
@@ -39,9 +39,9 @@
     display: block;
     width: 20px;
     height: 20px;
-    background-color: rgba(85, 193, 243, 0.4);
+    background-color: rgba(99, 102, 241, 0.452);
     bottom: -150px;
-    animation: circleAnimateTop 5s linear infinite;
+    animation: circleAnimateTop 4s linear infinite;
 }
 
 .circlesTop div:nth-child(1){
@@ -77,10 +77,10 @@
     animation-delay: 0s;
 }
 .circlesTop div:nth-child(6){
-    left: 75%;
+    left: 5%;
     width: 110px;
     height: 110px;
-    animation-delay: 3s;
+    animation-delay: 6s;
 }
 .circlesTop div:nth-child(7){
     left: 50%;
@@ -111,7 +111,7 @@
 }
 
 /* ------ Circles BOTTOM ------ */
-@keyframes circleAnimateBottom {
+/* @keyframes circleAnimateBottom {
     0%{
         opacity: 0;
         border-radius: 20%;
@@ -162,7 +162,7 @@
     height: 110px;
     animation-delay: 4s;
 }
-/* .circlesBottom div:nth-child(4){
+.circlesBottom div:nth-child(4){
     left: 40%;
     width: 60px;
     height: 60px;
