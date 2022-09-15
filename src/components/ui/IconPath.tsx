@@ -14,11 +14,11 @@ const IconPath: React.FC<IconPathProps> = ({ page, currentPage }) => {
             <Link href={path}>
                 
                     {name === currentPage ? (
-                        <a className="text-indigo-500 flex items-center p-1.5">
+                        <a className="text-emerald-500 flex items-center p-1.5">
                             <IconActive />
                         </a>
                     ) : (
-                        <a className="hover:bg-indigo-400 hover:text-white hover:rounded-full hover:bg-opacity-95 transition-all duration-500 flex items-center p-1.5 ">
+                        <a className="hover:bg-emerald-400 hover:text-white hover:rounded-full hover:bg-opacity-95 transition-all duration-500 flex items-center p-1.5 ">
                             <IconOutlined />
                         </a>
                     )}
