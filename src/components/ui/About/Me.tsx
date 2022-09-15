@@ -10,8 +10,8 @@ const Me = () => {
         </div>
 
         <div className="flex relative mb-4">
-          <Image src="/ImageProfile.jpg" width={280} height={260} alt="" className=' rounded-md z-10'/>
-          <div className="absolute border-2 border-emerald-500 w-64 h-64 right-[-20px] bottom-[-20px] rounded-md"></div>
+          <Image src="/ImageProfile.jpg" width={420} height={280}  alt="ImageProfile Ivan Campos Wainer" className='z-10 grayscale hover:grayscale-0 transition duration-500 rounded-md'/>
+          <div className="absolute border-2 border-emerald-500 w-80 h-56 right-[-20px] bottom-[-28px] rounded-md"></div>
         </div>
         
 

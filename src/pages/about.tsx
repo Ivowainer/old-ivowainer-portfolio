@@ -18,7 +18,7 @@ const about = () => {
         </div>
 
         
-        <a href="https://drive.google.com/file/d/1nX0jZ5ZTemDfu6FXl_-b02XsN72qHd3O/view?usp=sharing" rel="noopener noreferrer" target="_blank" className="fixed text-xl bottom-5 right-3 bg-emerald-500 px-3 py-2 text-white rounded-md"><BiNotepad /></a>
+        <a href="https://drive.google.com/file/d/1nX0jZ5ZTemDfu6FXl_-b02XsN72qHd3O/view?usp=sharing" rel="noopener noreferrer" target="_blank" className="fixed text-xl bottom-5 right-5 bg-emerald-500 px-3 py-2 text-white rounded-md"><BiNotepad /></a>
         
       </div>
     </MainLayout>
