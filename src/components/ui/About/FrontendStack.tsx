@@ -11,7 +11,7 @@ const FrontendStack = () => {
             <CardStack icon={<i className="devicon-typescript-plain colored"></i>} />
             <CardStack icon={<i className="devicon-html5-plain colored"></i>} />
             <CardStack icon={<i className="devicon-sass-original colored"></i>} />
-            <CardStack className="col-start-1 col-end-4" icon={<i className="devicon-nextjs-line colored"></i>} />
+            <CardStack className="col-start-1 col-end-3" icon={<i className="devicon-nextjs-line colored"></i>} />
             <CardStack icon={<i className="devicon-css3-plain colored"></i>} />
             <CardStack icon={<i className="devicon-git-plain colored"></i>} />
         </div>
