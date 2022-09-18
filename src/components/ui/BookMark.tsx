@@ -5,9 +5,10 @@ interface CoursesProps {
   description: string;
   date: string;
   lastItem?: boolean;
+  height?: string;
 }
 
-const Courses = ({ text, lastItem, date, description }: CoursesProps) => {
+const Courses = ({ text, lastItem, date, description, height = "h-28" }: CoursesProps) => {
   return (
     <div className='flex flex-col'>
         <div className="flex gap-3 ">
@@ -15,7 +16,7 @@ const Courses = ({ text, lastItem, date, description }: CoursesProps) => {
               <div className="bg-emerald-300 p-2 flex justify-center items-center text-white rounded-full">
                 <BiBookmark />
               </div>
-              {!lastItem && <div className="ml-[.87rem] w-[.5px] h-32 block bg-gray-300"></div>}
+              {!lastItem && <div className={`ml-[.98rem] w-[.5px] ${height}  block bg-gray-300`}></div>}
           </div>
 
           <div className="flex flex-col gap-1 left-12 top-[.5px]">
