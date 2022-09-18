@@ -7,7 +7,7 @@ const Me = () => {
         <div className='col-start-1 col-end-3 mr-10'>
           <p className='text-gray-500 text-[1.6rem] font-bold'>👋 Hola! Mi nombre es Iván pero puedes decirme Ivo :))</p>
           <p className='mt-10'>Me considero una persona sociable y responsable, alguien quien tiene mucho que compartir y recibir; Soy receptivo y completamente abierto a nuevas sugerencias y formas de trabajo.</p>
-          <p>Todas mis <Link href="#education"><a className='text-emerald-500 hover:underline cursor-pointer'> habilidades y conocimientos</a></Link> adquiridos a lo largo de estos años fueron de manera autodidacta. Debido al mundo de las TI, conocí amigos que me ayudaron en este camino.</p>
+          <p>Todas mis <Link href="#knowledge"><a className='text-emerald-500 hover:underline cursor-pointer'> habilidades y conocimientos</a></Link> adquiridos a lo largo de estos años fueron de manera autodidacta. Debido al mundo de las TI, conocí amigos que me ayudaron en este camino.</p>
         </div>
 
         <div className="flex relative mb-6">

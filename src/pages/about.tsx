@@ -31,7 +31,7 @@ const about = () => {
             <div className="flex pl-20 mt-10" >
               <div className="flex flex-col w-7/12">
                 <BookMark text="Lic. Ciencias Computación" date="2022 - Actualmente" description="Licenciatura en Ciencias de la computación; UNR (Universidad Nacional de Rosario), FCEIA (Ciencias Exactas, Ingeniería y Agrimensura)" />
-                <BookMark text="Curso NextJS" date="2022- Actualmente" description="Next.js: El framework de React para producción | del profesor Fernando Herrera en Udemy" height="h-24" />
+                <BookMark text="Curso NextJS" date="2022 - Actualmente" description="Next.js: El framework de React para producción | del profesor Fernando Herrera en Udemy" height="h-24" />
                 <BookMark text="Curso ReactJS" date="2022 - Actualmente" description="React - La Guía Completa: Hooks Context Redux MERN +15 Apps | del profesor Juan Pablo de la Torre Valdez en Udemy" />
                 <BookMark text="Curso Git" date="Realizado el 13 de mar. 2021" description="Curso gratuito de RocketCode" height="h-20" />
                 <BookMark text="Curso PHP & MySql" date="Adquirido el 24 de Oct. 2019" description="Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL | del profesor Juan Pablo de la Torre Valdez en Udemy" />
@@ -40,9 +40,12 @@ const about = () => {
             </div>
         </section>
 
-        <section className="flex flex-col gap-3 px-24 mt-16 pt-16 border-t border-gray-200">
-          <FrontendStack />
-          <BackendStack />
+        <section className="flex flex-col h-screen justify-center gap-7 px-24 mt-12 pt-14 border-t border-gray-200" id="knowledge">
+          <p className="text-3xl mb-5 text-gray-700 font-bold">🧑🏾‍💻 Tecnologías</p>
+          <div className="px-7 flex flex-col gap-3">
+            <FrontendStack />
+            <BackendStack />
+          </div>
         </section>
       </div>
     </MainLayout>
