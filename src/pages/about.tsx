@@ -8,6 +8,7 @@ import { BsBriefcase } from 'react-icons/bs'
 import FrontendStack from "../components/ui/About/FrontendStack";
 import BackendStack from '../components/ui/About/BackendStack';
 import NumberCard from "../components/ui/NumberCard";
+import CardProject from "../components/ui/About/CardProject";
 
 const about = () => {
 
@@ -45,6 +46,15 @@ const about = () => {
           <div className="px-7 flex flex-col gap-3">
             <FrontendStack />
             <BackendStack />
+          </div>
+        </section>
+
+        <section className="flex flex-col h-screen mt-32 gap-7 px-24" id="projects">
+          <p className="text-3xl mb-5 text-gray-700 font-bold">💼 Proyectos Destacables</p>
+          <div className="px-7 grid grid-cols-3 gap-8">
+            <CardProject />
+            <CardProject />
+            <CardProject />
           </div>
         </section>
       </div>
