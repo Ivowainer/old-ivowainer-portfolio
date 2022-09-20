@@ -16,6 +16,7 @@ const IconPath: React.FC<IconPathProps> = ({ page, currentPage }) => {
                     {name === currentPage ? (
                         <a className="text-emerald-500 flex items-center p-1.5">
                             <IconActive />
+                            
                         </a>
                     ) : (
                         <a className="hover:bg-emerald-400 hover:text-white hover:rounded-full hover:bg-opacity-95 transition-all duration-500 flex items-center p-1.5 ">
