@@ -6,7 +6,7 @@ interface NumberCardProps {
 
 const NumberCard = ({number, text, icon}: NumberCardProps) => {
   return (
-    <div className="text-5xl flex gap-4">
+    <div className="text-4xl lg:text-5xl flex gap-4">
       {icon}
       <div className="flex flex-col">
         <p className="text-3xl font-bold">+{number}</p>

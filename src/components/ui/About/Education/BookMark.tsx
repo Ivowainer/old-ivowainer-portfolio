@@ -8,7 +8,7 @@ interface CoursesProps {
   height?: string;
 }
 
-const Courses = ({ text, lastItem, date, description, height = "h-28" }: CoursesProps) => {
+const Courses = ({ text, lastItem, date, description, height = "h-44 lg:h-28" }: CoursesProps) => {
   return (
     <div className='flex flex-col'>
         <div className="flex gap-3 ">

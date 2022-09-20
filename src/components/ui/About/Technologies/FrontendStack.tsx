@@ -1,10 +1,10 @@
-import CardStack from '../CardStack'
+import CardStack from './CardStack'
 
 const FrontendStack = () => {
   return (
     <div>
         <p className="py-3 bg-gray-200 text-gray-500 font-bold rounded-t-lg text-center">Front-End Stack</p>
-        <div className="grid gap-2 mt-2 grid-cols-6 text-4xl">
+        <div className="grid gap-2 mt-2 grid-cols-2 lg:grid-cols-6 text-4xl">
             <CardStack icon={<i className="devicon-javascript-plain colored"></i>} />
             <CardStack icon={<i className="devicon-react-original colored"></i>} />
             <CardStack icon={<i className="devicon-tailwindcss-plain colored"></i>} />

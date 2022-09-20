@@ -9,7 +9,7 @@ interface IconRS {
 const IconRS = ({ href, icon }: IconRS) => {
   return (
     <Link href={href}>
-        <a className="hover:text-emerald-500 transition-colors duration-300">{icon}</a>
+        <a target="_blank" className="hover:text-emerald-500 transition-colors duration-300">{icon}</a>
     </Link>
   )
 }
