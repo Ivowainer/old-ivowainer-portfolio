@@ -13,7 +13,7 @@ const CardProject = () => {
                 <p className='text-gray-700 font-bold'>ManageWainer_mern</p>
 
                 <div className="">
-                    <p className='text-gray-600 font-normal'>It's a ProjectManager to keep your projects organized; You can register by a real gmail and add a real collaborators who can complete the task</p>
+                    <p className='text-gray-600 font-normal'>It&apos;s a ProjectManager to keep your projects organized; You can register by a real gmail and add a real collaborators who can complete the task</p>
                     <p></p>
                 </div>
             </div>
