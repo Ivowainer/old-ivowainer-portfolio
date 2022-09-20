@@ -1,6 +1,6 @@
 type LanguageTypeData = "JavaScript" | "PHP" | "CSS" | "HTML" | "TypeScript" | "NextJS" | "MySQL" | "Express" | "MongoDB" | "React"
 
-export type Language = 'Javascript' | 'Typescript' | 'Prisma' | 'MongoDB' | 'React' | 'Typescript' | 'NextJS' | 'PHP' | 'MySQL' | 'CSS' | 'Express' | 'Tailwind' | 'JWT' | 'Socket.IO'
+export type Language = 'Javascript' | 'Typescript' | 'Prisma' | 'MongoDB' | 'React' | 'Typescript' | 'NextJS' | 'PHP' | 'MySQL' | 'CSS' | 'Express' | 'Tailwind' | 'JWT' | 'Socket.IO' | 'NextUI'
 
 export type LanguagesType = {
     status: number;
