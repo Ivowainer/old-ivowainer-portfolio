@@ -1,4 +1,5 @@
-import { Language } from '../components/ui/LanguagePoint';
+import { Language } from '../types/RepositoryTypes';
+
 
 export interface ProjectsInterface {
     name: string;

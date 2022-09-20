@@ -30,7 +30,7 @@ const CardProject = () => {
                 <p>Tailwind |</p>
                 <p>React |</p>
                 <p>JavaScript |</p>
-                <p>JWT </p>
+                <p>JWT |</p>
             </div>
         </div>
     )
