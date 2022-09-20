@@ -22,7 +22,7 @@ const MainLayout = ({ children, pageName } : MainLayoutProps) => {
           <NavBar pageName={pageName} />
         </aside>
         
-        <main className="w-full">
+        <main className="w-full overflow-x-hidden">
           { children }
         </main>
       </div>

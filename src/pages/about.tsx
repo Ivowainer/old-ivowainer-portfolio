@@ -24,7 +24,7 @@ const about = () => {
               <NumberCard icon={<BsBriefcase />} number={10} text={"projects completed"}/>
               <NumberCard icon={<BiCoffeeTogo />} number={120} text={"coffe consumed"}/>
           </div>
-          <a href="https://drive.google.com/file/d/1nX0jZ5ZTemDfu6FXl_-b02XsN72qHd3O/view?usp=sharing" rel="noopener noreferrer" target="_blank" className="fixed text-xl bottom-5 right-5 bg-emerald-500 px-3 py-2 text-white rounded-md"><BiNotepad /></a>
+          <a href="https://drive.google.com/file/d/1nX0jZ5ZTemDfu6FXl_-b02XsN72qHd3O/view?usp=sharing" rel="noopener noreferrer" target="_blank" className="hidden lg:block fixed text-xl bottom-5 right-5 bg-emerald-500 px-3 py-2 text-white rounded-md"><BiNotepad /></a>
         </div>
 
         <section className="px-10 pt-10" id="education">
