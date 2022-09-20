@@ -29,12 +29,6 @@ export const PAGES: Route[] = [
         IconOutlined: RiUserLine
     },
     {
-        name: 'Projects',
-        path: '/projects',
-        IconActive: BsBriefcaseFill,
-        IconOutlined: BsBriefcase
-    },
-    {
         name: 'Contact',
         path: '/contact',
         IconActive: MdEmail,
