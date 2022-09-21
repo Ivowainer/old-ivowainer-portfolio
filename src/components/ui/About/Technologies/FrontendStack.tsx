@@ -3,7 +3,7 @@ import CardStack from './CardStack'
 const FrontendStack = () => {
   return (
     <div>
-        <p className="py-3 bg-gray-200 text-gray-500 font-bold rounded-t-lg text-center">Front-End Stack</p>
+        <p className="py-3 dark:bg-gray-600 dark:text-gray-200 bg-gray-200 text-gray-500 font-bold rounded-t-lg text-center">Front-End Stack</p> {/* dark:border dark:border-gray-400 dark:bg-gray-700 dark:text-gray-100 */}
         <div className="grid gap-2 mt-2 grid-cols-2 lg:grid-cols-6 text-4xl">
             <CardStack icon={<i className="devicon-javascript-plain colored"></i>} />
             <CardStack icon={<i className="devicon-react-original colored"></i>} />

@@ -9,10 +9,10 @@ const AboutIndex = () => {
   return (
     <div className="px-6 lg:px-20 lg:h-screen 2xl:h-auto flex flex-col gap-14">
         <div className="flex flex-col">
-        <Me />
+          <Me />
         </div>
 
-        <div className='flex justify-evenly text-gray-500'>
+        <div className='flex justify-evenly text-gray-500 dark:text-gray-300'>
             <NumberCard icon={<BsBriefcase />} number={10} text={"projects completed"}/>
             <NumberCard icon={<BiCoffeeTogo />} number={120} text={"coffe consumed"}/>
         </div>

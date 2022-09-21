@@ -1,6 +1,6 @@
 import { PAGES, PagesNames } from '../../helpers/Pages';
+import DLButton from './DLButton';
 import IconPath from './IconPath';
-import { BsSun } from 'react-icons/bs'
 
 interface NavBarProps {
     pageName: PagesNames;
@@ -8,7 +8,7 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
     return (
-        <div className='flex w-screen lg:w-auto  lg:flex-col justify-between items-center px-6 py-8 gap-12 lg:gap-20 h-full text-gray-500'>
+        <div className='flex w-screen lg:w-auto dark:bg-gray-700 lg:flex-col justify-between items-center px-6 py-8 gap-12 lg:gap-20 h-full text-gray-500'>
             <h1 className='font-bold text-3xl text-emerald-500'>ICW</h1>
 
             <nav className='flex lg:flex-col justify-between gap-3 lg:gap-8 text-2xl'>
@@ -17,9 +17,7 @@ const NavBar: React.FC<NavBarProps> = ({ pageName }) => {
                 ))}
             </nav>
 
-            <div className="text-xl px-1 py-1 border border-gray-500 rounded-md">
-                <BsSun />
-            </div>
+            <DLButton />
         </div>
     )
 }

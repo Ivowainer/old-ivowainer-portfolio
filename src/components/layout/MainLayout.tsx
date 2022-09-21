@@ -17,8 +17,8 @@ const MainLayout = ({ children, pageName } : MainLayoutProps) => {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
       </Head>
 
-      <div className='flex flex-col  lg:flex-row '>
-        <aside className="z-20 lg:h-screen bg-gray-100 lg:bg-white sticky top-0 lg:border-r-2">
+      <div className='flex flex-col  lg:flex-row dark:bg-gray-700'>
+        <aside className="z-20 lg:h-screen dark:bg-gray-800 bg-gray-100 lg:bg-white sticky top-0 dark:border-gray-600 lg:border-r-2">
           <NavBar pageName={pageName} />
         </aside>
         
