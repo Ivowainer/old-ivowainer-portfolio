@@ -1,7 +1,6 @@
 import { AiOutlineHome, AiFillHome, AiOutlineMail } from 'react-icons/ai'
 import { RiUserFill, RiUserLine } from 'react-icons/ri'
-import { HiOutlineAcademicCap, HiAcademicCap } from 'react-icons/hi'
-import { BsBriefcaseFill, BsBriefcase } from 'react-icons/bs'
+import { HiOutlineNewspaper, HiNewspaper } from 'react-icons/hi'
 import { MdEmail } from 'react-icons/md'
 
 import { IconType } from 'react-icons'
@@ -13,7 +12,7 @@ export interface Route {
     IconOutlined: IconType;
 }
 
-export type PagesNames = "Home" | "About" | "Education" | "Projects" | "Contact"
+export type PagesNames = "Home" | "About" | "Education" | "Projects" | "Contact" | "Blog"
 
 export const PAGES: Route[] = [
     {
@@ -29,9 +28,16 @@ export const PAGES: Route[] = [
         IconOutlined: RiUserLine
     },
     {
+        name: 'Blog',
+        path: '/blog',
+        IconActive: HiNewspaper,
+        IconOutlined: HiOutlineNewspaper
+    },
+    {
         name: 'Contact',
         path: '/contact',
         IconActive: MdEmail,
         IconOutlined: AiOutlineMail
-    },
+    }
+
 ]
