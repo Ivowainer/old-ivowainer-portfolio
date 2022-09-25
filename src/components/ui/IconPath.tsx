@@ -3,7 +3,7 @@ import { PagesNames, Route } from '../../helpers/Pages';
 
 interface IconPathProps {
     page: Route;
-    currentPage: PagesNames;
+    currentPage: string;
 }
 
 const IconPath: React.FC<IconPathProps> = ({ page, currentPage }) => {

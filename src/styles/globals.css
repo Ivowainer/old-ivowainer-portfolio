@@ -109,3 +109,28 @@
     animation-delay: 0s;
     animation-duration: 11s;
 }
+
+/* MarkDown */
+h1{
+    font-size: 32pt;
+    font-weight: bolder;
+}
+h2{
+    font-size: 26pt;
+    font-weight: bolder;
+}
+h3{
+    font-size: 22pt;
+    font-weight: bolder;
+}
+
+li{
+    list-style: disc;
+}
+ol li{
+    list-style: decimal;
+}
+
+ul li ul li{
+    margin-left: 40px;
+}

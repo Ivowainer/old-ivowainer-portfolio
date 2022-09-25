@@ -3,7 +3,7 @@ import { PagesNames } from "../../helpers/Pages"
 import NavBar from "../ui/NavBar"
 
 interface MainLayoutProps {
-  pageName: PagesNames;
+  pageName: string;
   children: React.ReactNode
 }
 
