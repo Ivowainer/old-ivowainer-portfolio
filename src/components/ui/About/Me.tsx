@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Me = () => {
+const Me = () => {  
   return (
     <div className='flex flex-col lg:grid lg:grid-cols-3 text-gray-400 mt-10 text-lg gap-5 items-center justify-items-start'>
         <div className='col-start-1 col-end-3 lg:mr-10'>
