@@ -11,8 +11,6 @@ interface CardProjectProps {
 
 const CardProject = ({project}: CardProjectProps) => {
 
-    console.log(project.languages)
-
     return (
         <div className="flex flex-col justify-between px-8 py-6 rounded-md dark:bg-gray-600 bg-gray-200 gap-6">
             <div className="flex flex-col gap-6">

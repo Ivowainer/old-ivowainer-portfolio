@@ -9,7 +9,7 @@ const BackendStack = () => {
             <CardStack icon={<i className="devicon-mongodb-plain colored"></i>} />
             <CardStack icon={<i className="devicon-nodejs-plain colored"></i>} />
             <CardStack className='dark:hidden col-start-1 col-end-2 lg:col-start-3 lg:col-end-5 text-6xl px-1 py-1' icon={<i className="devicon-express-original-wordmark colored"></i>} />
-            <CardStack className='dark:col-start-1 dark:col-end-2 dark:lg:col-start-3 dark:lg:col-end-5 dark:text-6xl dark:px-1 dark:py-1' icon={<i className="devicon-express-original-wordmark "></i>} />
+            <CardStack className='dark:grid hidden dark:col-start-1 dark:col-end-2 dark:lg:col-start-3 dark:lg:col-end-5 dark:text-6xl dark:px-1 dark:py-1' icon={<i className="devicon-express-original-wordmark "></i>} />
             <CardStack icon={<i className="devicon-firebase-plain colored"></i>} />
             <CardStack icon={<i className="devicon-mysql-plain colored"></i>} />
             <CardStack icon={<i className="devicon-php-plain colored"></i>} />
