@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node_modules/next/dist/bin/next start -p $PORT",
+    
     "lint": "next lint"
   },
   "dependencies": {
@@ -15,7 +16,7 @@
     "markdown-it-emoji": "^2.0.2",
     "next": "12.3.0",
     "next-themes": "^0.2.1",
-    "nextjs-progressbar-spinner": "^0.1.0",
+    "nextjs-progressbar-spinner": "0.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0"
