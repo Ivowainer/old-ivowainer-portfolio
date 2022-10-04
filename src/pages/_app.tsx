@@ -2,15 +2,17 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
 
-import { NextProgressbarSpinner } from 'nextjs-progressbar-spinner'
+import NextNProgress from "nextjs-progressbar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return(
     <ThemeProvider enableSystem={true} attribute="class">
-      <NextProgressbarSpinner
-        NextNProgressProps={{
-          color: 'rgb(16, 185, 129)',
-        }}
+      <NextNProgress 
+        color="rgb(16, 185, 129)"
+        startPosition={0.3}
+        stopDelayMs={200}
+        height={3}
+        showOnShallow={true}
       />
       <Component {...pageProps} />
     </ThemeProvider>
