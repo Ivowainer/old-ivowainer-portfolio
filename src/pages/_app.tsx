@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return(
     <ThemeProvider enableSystem={true} attribute="class">
       <NextNProgress 
-        color="rgb(16, 185, 129)"
+        color="#10b981"
         startPosition={0.3}
         stopDelayMs={200}
         height={3}

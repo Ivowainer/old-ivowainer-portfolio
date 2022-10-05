@@ -14,6 +14,15 @@ const MainLayout = ({ children, pageName } : MainLayoutProps) => {
       <Head>
         <title>{`${pageName} | Ivan Campos Wainer`}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="author" content="Ivo Wainer" />
+        <meta name="description" content={`About the post ${ pageName }`} />
+        <meta name="keywords" content={`${ pageName }, programación, technologies, portfolio, how, build, nextjs, react`} />
+
+        <meta property="og:title" content={`Learn with post "${pageName}" from IvoWainer`} />
+        <meta property="og:description" content={`Read about the las post of IvoWainer: ${pageName}`} />
+        <meta property="og:image" content={`/Logo.png`} />
+
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
       </Head>
 
