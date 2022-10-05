@@ -16,7 +16,7 @@ const NamePost = ({ post }: blogPropsUnique) => {
     <MainLayout pageName={`${post.attributes.Title}`}>
       <div className="text-sm px-6 lg:px-20 py-10 flex flex-col gap-3">
         <h1 className="text-4xl text-gray-700 dark:text-gray-200 font-bold">{post.attributes.Title}</h1>
-        <section className="prose dark:prose-invert lg:prose-md" dangerouslySetInnerHTML={{__html: htmlContent}}></section>
+        <section className="prose prose-headings:text-gray-600 dark:prose-headings:text-gray-100 dark:prose-invert font-normal lg:prose-md javascript" dangerouslySetInnerHTML={{__html: htmlContent}}></section>
       </div>
     </MainLayout>
   )
