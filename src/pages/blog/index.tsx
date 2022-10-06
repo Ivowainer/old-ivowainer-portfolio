@@ -7,7 +7,7 @@ import { blogProps } from "../../types/BlogTypes";
 const blog = ({ posts }: blogProps) => {
 
     return (
-        <MainLayout pageName="Blog">
+        <MainLayout pageName="Blog" pageDescription="Look the last post from IvoWainer Portfolio!" post={false}>
             <div className="px-6 lg:px-20 pt-6 lg:pt-10 pb-8 min-h-screen dark:bg-gray-700">
                 <p className="dark:text-gray-300 text-gray-600 font-bold text-4xl">✍️ Escritos</p>
                 

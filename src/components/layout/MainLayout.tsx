@@ -4,10 +4,12 @@ import NavBar from "../ui/NavBar"
 
 interface MainLayoutProps {
   pageName: string;
-  children: React.ReactNode
+  children: React.ReactNode;
+  post: boolean;
+  pageDescription: string;
 }
 
-const MainLayout = ({ children, pageName } : MainLayoutProps) => {
+const MainLayout = ({ children, pageName, post, pageDescription } : MainLayoutProps) => {
 
   return (
     <>
@@ -18,8 +20,8 @@ const MainLayout = ({ children, pageName } : MainLayoutProps) => {
         <meta name="description" content={`About the post ${ pageName }`} />
         <meta name="keywords" content={`${ pageName }, programación, technologies, portfolio, how, build, nextjs, react`} />
 
-        <meta property="og:title" content={`Learn with post "${pageName}" from IvoWainer`} />
-        <meta property="og:description" content={`Read about the las post of IvoWainer: ${pageName}`} />
+        <meta property="og:title" content={`${pageName}`} />
+        <meta property="og:description" content={`${pageDescription}`} />
         <meta property="og:image" content={`/Logo.png`} />
 
 

@@ -7,7 +7,7 @@ import AboutIndex from "../components/ui/About/AboutIndex";
 const about = () => {
 
   return (
-    <MainLayout pageName="About">
+    <MainLayout pageName="About" pageDescription="Look About IvoWainer" post={false}>
       <div className="pt-6 lg:pt-6 pb-8">
         <AboutIndex />
         <Technologies />

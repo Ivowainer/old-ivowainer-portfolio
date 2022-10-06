@@ -9,7 +9,7 @@ import IconRS from '../components/ui/IconRS';
 
 const Home: NextPage = () => {
   return (
-    <MainLayout pageName='Home'>
+    <MainLayout pageName='Home' pageDescription='Welcome to my Home Page!' post={false}>
       <div className='relative h-screen lg:h-screen flex flex-col w-full items-center justify-center dark:text-gray-200 text-gray-600'>
         <p className='text-4xl font-bold'>Ivan Campos Wainer</p>
         <p className='text-xl font-semibold dark:text-gray-400 text-gray-400'><span className='dark:text-emerald-500 text-emerald-400'>Frontend</span> Web Developer</p>
