@@ -11,6 +11,7 @@
   "dependencies": {
     "@octokit/core": "^4.0.5",
     "axios": "^0.27.2",
+    "escape-html": "^1.0.3",
     "markdown-it": "^13.0.1",
     "markdown-it-emoji": "^2.0.2",
     "next": "12.3.0",
@@ -18,10 +19,12 @@
     "nextjs-progressbar": "^0.0.14",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "slate": "^0.85.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.7",
+    "@types/escape-html": "^1.0.2",
     "@types/markdown-it": "^12.2.3",
     "@types/markdown-it-emoji": "^2.0.2",
     "@types/node": "18.7.16",

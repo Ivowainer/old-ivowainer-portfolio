@@ -17,14 +17,14 @@ const blog = ({ posts }: blogProps) => {
                     </div>
                     <div className="mt-8 flex flex-col gap-4">
                         {posts.map(value => (
-                            <div className="" key={value.attributes.Title}>
-                                <Link href={`/blog/${value.attributes.Title}`}>
+                            <div className="" key={value.title}>
+                                <Link href={`/blog/${value.slug}`}>
                                     <a className="flex justify-between hover:underline decoration-gray-700 dark:decoration-white">
-                                        <p className="font-bold dark:text-gray-400 text-gray-500 text-lg">{value.attributes.Title}</p>
+                                        <p className="font-bold dark:text-gray-400 text-gray-500 text-lg">{value.title}</p>
                                         <p className="text-emerald-400 text-sm">Sep 05</p>
                                     </a>
                                 </Link>
-                                <p className="text-sm dark:text-gray-500 text-gray-700">{value.attributes.description}</p>
+                                <p className="text-sm dark:text-gray-500 text-gray-700">{value.title}</p>
                             </div>
                         ))}
                     </div>
@@ -37,11 +37,11 @@ const blog = ({ posts }: blogProps) => {
 export default blog
 
 export const getServerSideProps: GetServerSideProps = async () => {
-    const { data: { data } } = await getBlog('posts')
+    const { data: { docs } } = await getBlog('posts')
 
     return {
         props: {
-            posts: data
+            posts: docs
         }
     }
 }

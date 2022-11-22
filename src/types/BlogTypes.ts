@@ -1,18 +1,18 @@
 export type attributes  = {
-    Title: string;
+    title: string;
     description: string;
-    content: string;
+    content: string[];
+    slug: string;
 }
 
-export interface postsProps {
-    id: number;
-    attributes: attributes;
-}
+/* export interface postsProps {
+    posts: attributes
+} */
 
 export interface blogProps {
-    posts: postsProps[]
+    posts: attributes[]
 }
 
 export interface blogPropsUnique {
-    post: postsProps
+    post: attributes
 } 
