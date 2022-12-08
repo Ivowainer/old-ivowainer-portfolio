@@ -1,121 +1,76 @@
-import React, { Fragment } from 'react';
-import escapeHTML from 'escape-html';
-import { Text } from 'slate';
+import React, { Fragment } from "react";
+import escapeHTML from "escape-html";
+import { Text } from "slate";
 
-const Serialize = ({children}: any) => children.map((node: any, i: any) => {
-  if (Text.isText(node)) {
-    let text = <span dangerouslySetInnerHTML={{ __html: escapeHTML(node.text) }} />;
+interface node {
+    bold: string;
+    code: string;
+    italic: string;
+    url: string;
+    children: any;
+    type: any;
+}
 
-    if (node.bold) {
-      text = (
-        <strong key={i}>
-          {text}
-        </strong>
-      );
-    }
+const Serialize = ({ children }: any) =>
+    children.map((node: node, i: any) => {
+        if (Text.isText(node)) {
+            let text = <span dangerouslySetInnerHTML={{ __html: escapeHTML(node.text) }} />;
 
-    if (node.code) {
-      text = (
-        <code key={i}>
-          {text}
-        </code>
-      );
-    }
+            if (node.bold) {
+                text = <strong key={i}>{text}</strong>;
+            }
 
-    if (node.italic) {
-      text = (
-        <em key={i}>
-          {text}
-        </em>
-      );
-    }
+            if (node.code) {
+                text = <code key={i}>{text}</code>;
+            }
 
-    // Handle other leaf types here...
+            if (node.italic) {
+                text = <em key={i}>{text}</em>;
+            }
 
-    return (
-      <Fragment key={i}>
-        {text}
-      </Fragment>
-    );
-  }
+            // Handle other leaf types here...
 
-  if (!node) {
-    return null;
-  }
+            return <Fragment key={i}>{text}</Fragment>;
+        }
 
-  switch (node.type) {
-    case 'h1':
-      return (
-        <h1 key={i}>
-          {Serialize(node.children)}
-        </h1>
-      );
-    // Iterate through all headings here...
-    case 'h6':
-      return (
-        <h6 key={i}>
-          {Serialize(node.children)}
-        </h6>
-      );
+        if (!node) {
+            return null;
+        }
 
-    case 'h2':
-      return (
-        <h2 key={i}>
-          {Serialize({children: node.children})}
-        </h2>
-      );
+        switch (node.type) {
+            case "h1":
+                return <h1 key={i}>{Serialize(node.children)}</h1>;
+            // Iterate through all headings here...
+            case "h6":
+                return <h6 key={i}>{Serialize(node.children)}</h6>;
 
-    case 'ul':
-      return (
-        <ul key={i}>
-          {Serialize({children: node.children})}
-        </ul>
-      );
+            case "h2":
+                return <h2 key={i}>{Serialize({ children: node.children })}</h2>;
 
-    case 'li':
-      return (
-        <li key={i}>
-          {Serialize({children: node.children})}
-        </li>
-      );
+            case "ul":
+                return <ul key={i}>{Serialize({ children: node.children })}</ul>;
 
-    case 'ol':
-      return (
-        <ol key={i}>
-          {Serialize({children: node.children})}
-        </ol>
-      );
-    case 'quote':
-      return (
-        <blockquote key={i}>
-          {Serialize({children: node.children})}
-        </blockquote>
-      );
-    
-    case 'link':
-      return (
-        <a
-          href={escapeHTML(node.url)}
-          key={i}
-        >
-          {Serialize({children: node.children})}
-        </a>
-      )
-    
-    case 'table':
-      return(
-        <table>
-          {Serialize({children: node.children})}
-        </table>
-      )
+            case "li":
+                return <li key={i}>{Serialize({ children: node.children })}</li>;
 
-    default:
-      return (
-        <p key={i}>
-          {Serialize({children: node.children})}
-        </p>
-      )
-  }
-});
+            case "ol":
+                return <ol key={i}>{Serialize({ children: node.children })}</ol>;
+            case "quote":
+                return <blockquote key={i}>{Serialize({ children: node.children })}</blockquote>;
 
-export default Serialize
+            case "link":
+                return (
+                    <a href={escapeHTML(node.url)} key={i}>
+                        {Serialize({ children: node.children })}
+                    </a>
+                );
+
+            case "table":
+                return <table>{Serialize({ children: node.children })}</table>;
+
+            default:
+                return <p key={i}>{Serialize({ children: node.children })}</p>;
+        }
+    });
+
+export default Serialize;
