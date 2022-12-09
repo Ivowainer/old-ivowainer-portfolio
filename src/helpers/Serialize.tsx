@@ -65,6 +65,9 @@ const Serialize = ({ children }: any) =>
                     </a>
                 );
 
+            case "hr":
+                return <hr key={i} />;
+
             case "table":
                 return <table>{Serialize({ children: node.children })}</table>;
 
