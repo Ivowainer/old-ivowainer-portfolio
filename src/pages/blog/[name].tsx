@@ -10,7 +10,7 @@ import { EntriesType, getEntriesType } from "../../types/EntriesTypes";
 import PortableText from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 
-const urlFor = (source: any) => imageUrlBuilder({ projectId: "54bhdq86", dataset: "production" }).image(source);
+const urlFor = (source: any) => imageUrlBuilder({ projectId: process.env.projectId || "s", dataset: "production" }).image(source);
 
 const serializer = {
     types: {
@@ -20,6 +20,7 @@ const serializer = {
                 <figcaption>{props.node.caption}</figcaption>
             </figure>
         ),
+        break: (props: any) => <hr />,
     },
 };
 
