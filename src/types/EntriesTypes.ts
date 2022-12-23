@@ -8,7 +8,7 @@ export interface EntriesType {
 }
 
 export interface Entry {
-    _createdAt: Date;
+    publishDate: Date;
     authorPost: string;
     categories: Categories;
     content: Content[];

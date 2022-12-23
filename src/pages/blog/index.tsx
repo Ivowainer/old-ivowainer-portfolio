@@ -23,7 +23,7 @@ const blog = ({ posts }: EntriesType) => {
                             <div className="" key={value?.titlePost}>
                                 <Link href={`/blog/${value?.slugPost}`} className="flex justify-between hover:underline decoration-gray-700 dark:decoration-white">
                                     <p className="font-bold dark:text-gray-400 text-gray-500 text-lg">{value?.titlePost}</p>
-                                    <p className="text-emerald-400 text-sm">{dateFormatter(value?._createdAt?.toString()).slice(0, 6)}</p>
+                                    <p className="text-emerald-400 text-sm">{dateFormatter(value?.publishDate?.toString()).slice(0, 6)}</p>
                                 </Link>
                                 <p className="text-sm dark:text-gray-500 text-gray-700">{value?.titlePost}</p>
                             </div>
@@ -40,7 +40,7 @@ export default blog;
 export const getStaticProps: GetStaticProps = async () => {
     const {
         data: { result },
-    } = await axios(`${process.env.NEXT_PUBLIC_BLOG_ENTRIES}[_type == 'posts']{categories, authorPost, _createdAt, tags, slugPost, titlePost, keywords, descriptionPost, content}`);
+    } = await axios(`${process.env.NEXT_PUBLIC_BLOG_ENTRIES}[_type == 'posts']{categories, authorPost, publishDate, tags, slugPost, titlePost, keywords, descriptionPost, content}`);
 
     return {
         props: {
