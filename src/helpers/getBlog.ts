@@ -1,7 +1,7 @@
-import axios from 'axios'
+import axios from "axios";
 
 const getBlog = axios.create({
-    baseURL: process.env.NEXT_PUBLIC_BLOG_ENTRIES
-})
+    baseURL: process.env.NEXT_PUBLIC_BLOG_ENTRIES,
+});
 
-export default getBlog
+export default getBlog;
