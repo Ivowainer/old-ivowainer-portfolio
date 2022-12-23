@@ -1,3 +1,7 @@
+export interface getEntriesType {
+    result: Entry[];
+}
+
 export interface EntriesType {
     posts: Entry[];
     post: Entry;

@@ -1,11 +1,11 @@
-import { GetServerSideProps } from "next";
+import { GetStaticProps, GetStaticPaths } from "next";
 import Image from "next/image";
 
 import axios from "axios";
 
 import MainLayout from "../../components/layout/MainLayout";
 
-import { EntriesType } from "../../types/EntriesTypes";
+import { EntriesType, getEntriesType } from "../../types/EntriesTypes";
 
 import PortableText from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
@@ -27,7 +27,7 @@ const NamePost = ({ post }: EntriesType) => {
     return (
         <MainLayout pageName={`Blog | ${post.titlePost}`} pageDescription={`${post.descriptionPost}`} post={true}>
             <div className="text-sm px-6 lg:px-20 py-10 flex flex-col gap-3">
-                <h1 className="text-4xl text-gray-700 dark:text-gray-200 font-bold">{post.titlePost}</h1>
+                {/* <h1 className="text-4xl text-gray-700 dark:text-gray-200 font-bold">{post.titlePost}</h1> */}
 
                 <div className="prose dark:prose-hr:border-white prose-hr:border-gray-600 prose-headings:text-gray-600 dark:prose-headings:text-gray-100 dark:prose-invert font-normal lg:prose-md javascript">
                     {/* <Serialize>{post.content}</Serialize> */}
@@ -40,9 +40,22 @@ const NamePost = ({ post }: EntriesType) => {
     );
 };
 
-export default NamePost;
+export const getStaticPaths: GetStaticPaths = async (ctx) => {
+    const {
+        data: { result },
+    } = await axios.get<getEntriesType>(`${process.env.NEXT_PUBLIC_BLOG_ENTRIES}[_type == 'posts']{categories, authorPost, _createdAt, tags, slugPost, titlePost, keywords, descriptionPost, content}`);
 
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+    const postSlug: string[] = result.map((val) => val.slugPost);
+
+    return {
+        paths: postSlug.map((name) => ({
+            params: { name: name.toString() },
+        })),
+        fallback: "blocking",
+    };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
     const { name } = params as { name: string };
 
     const {
@@ -55,3 +68,5 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
         },
     };
 };
+
+export default NamePost;
