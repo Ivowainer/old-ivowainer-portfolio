@@ -16,7 +16,7 @@ const blog = ({ posts }: EntriesType) => {
 
                 <div className="mt-8 lg:mt-16 w-5/6 lg:w-1/2 px-8 lg:px-10">
                     <div className="border-b pb-2 border-gray-500">
-                        <p className="font-bold text-emerald-600 text-4xl">Latest Posts</p>
+                        <p className="font-bold text-emerald-600 text-4xl">Últimas publicaciones</p>
                     </div>
                     <div className="mt-8 flex flex-col gap-4">
                         {posts.map((value) => (
