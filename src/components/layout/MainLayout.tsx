@@ -15,9 +15,13 @@ const MainLayout = ({ children, pageName, post, pageDescription }: MainLayoutPro
             <Head>
                 <title>{`${pageName} | Ivan Campos Wainer`}</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <meta name="author" content="Ivo Wainer" />
-                <meta name="description" content={`About the post ${pageName}`} />
+
+                <meta name="author" content="Ivan Campos Wainer" />
+                <meta name="description" content={`Page ${pageName}`} />
+                <meta name="copyright" content="Ivan Campos Wainer" />
                 <meta name="keywords" content={`${pageName}, programación, technologies, portfolio, how, build, nextjs, react`} />
+
+                <meta name="robots" content="index" />
 
                 <meta property="og:title" content={`${pageName}`} />
                 <meta property="og:description" content={`${pageDescription}`} />
