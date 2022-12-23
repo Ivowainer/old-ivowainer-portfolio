@@ -2,18 +2,19 @@ import Head from "next/head";
 import { PagesNames } from "../../helpers/Pages";
 import NavBar from "../ui/NavBar";
 
-interface MainLayoutProps {
+interface BlogLayoutProps {
     pageName: string;
     children: React.ReactNode;
+    blogName: string;
     post: boolean;
     pageDescription: string;
 }
 
-const MainLayout = ({ children, pageName, post, pageDescription }: MainLayoutProps) => {
+const BlogLayout = ({ children, pageName, post, pageDescription, blogName }: BlogLayoutProps) => {
     return (
         <>
             <Head>
-                <title>{`${pageName} | Ivan Campos Wainer`}</title>
+                <title>{`${pageName} | ${blogName}`}</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <meta name="author" content="Ivo Wainer" />
                 <meta name="description" content={`About the post ${pageName}`} />
@@ -37,4 +38,4 @@ const MainLayout = ({ children, pageName, post, pageDescription }: MainLayoutPro
     );
 };
 
-export default MainLayout;
+export default BlogLayout;
