@@ -27,12 +27,12 @@ const serializer = {
 
 const NamePost = ({ post }: EntriesType) => {
     return (
-        <BlogLayout pageName={`Blog`} blogName={post.titlePost} pageDescription={`${post.descriptionPost}`} post={true}>
+        <BlogLayout pageName={`Blog`} blogName={post?.titlePost} pageDescription={`${post?.descriptionPost}`} post={true}>
             <div className="text-sm px-6 lg:px-20 py-10 flex flex-col gap-3">
                 {/* <h1 className="text-4xl text-gray-700 dark:text-gray-200 font-bold">{post.titlePost}</h1> */}
 
                 <div className="prose dark:prose-hr:border-white prose-hr:border-gray-600 prose-headings:text-gray-600 dark:prose-headings:text-gray-100 dark:prose-invert font-normal lg:prose-md javascript">
-                    <PortableText blocks={post.content} serializers={serializer} />
+                    <PortableText blocks={post?.content} serializers={serializer} />
                 </div>
             </div>
         </BlogLayout>

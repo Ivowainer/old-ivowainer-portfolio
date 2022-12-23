@@ -20,12 +20,12 @@ const blog = ({ posts }: EntriesType) => {
                     </div>
                     <div className="mt-8 flex flex-col gap-4">
                         {posts.map((value) => (
-                            <div className="" key={value.titlePost}>
-                                <Link href={`/blog/${value.slugPost}`} className="flex justify-between hover:underline decoration-gray-700 dark:decoration-white">
-                                    <p className="font-bold dark:text-gray-400 text-gray-500 text-lg">{value.titlePost}</p>
-                                    <p className="text-emerald-400 text-sm">{dateFormatter(value._createdAt.toString()).slice(0, 6)}</p>
+                            <div className="" key={value?.titlePost}>
+                                <Link href={`/blog/${value?.slugPost}`} className="flex justify-between hover:underline decoration-gray-700 dark:decoration-white">
+                                    <p className="font-bold dark:text-gray-400 text-gray-500 text-lg">{value?.titlePost}</p>
+                                    <p className="text-emerald-400 text-sm">{dateFormatter(value?._createdAt?.toString()).slice(0, 6)}</p>
                                 </Link>
-                                <p className="text-sm dark:text-gray-500 text-gray-700">{value.titlePost}</p>
+                                <p className="text-sm dark:text-gray-500 text-gray-700">{value?.titlePost}</p>
                             </div>
                         ))}
                     </div>
