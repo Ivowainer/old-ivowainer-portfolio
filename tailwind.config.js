@@ -21,6 +21,12 @@ module.exports = {
                             padding: "7px 5px",
                             backgroundColor: "#dfe2e6",
                         },
+                        "code::before": {
+                            content: '""',
+                        },
+                        "code::after": {
+                            content: '""',
+                        },
                         h2: {
                             textDecorationLine: "underline",
                             textDecorationColor: "#dfe2e6",

@@ -4,7 +4,17 @@ export interface getEntriesType {
 
 export interface EntriesType {
     posts: Entry[];
+    categories: Category[];
     post: Entry;
+}
+
+export interface Category {
+    _createdAt: Date;
+    _id: string;
+    _rev: string;
+    _type: string;
+    _updatedAt: Date;
+    category: string;
 }
 
 export interface Entry {
