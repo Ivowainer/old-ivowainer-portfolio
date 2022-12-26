@@ -18,7 +18,6 @@ import Code from "../../components/ui/CodeLanguage";
 const code = `var data = 1;`;
 
 const html = Prism.highlight(code, Prism.languages.javascript, "javascript");
-console.log(html);
 
 const urlFor = (source: any) => imageUrlBuilder({ projectId: "54bhdq86", dataset: "production" }).image(source);
 
