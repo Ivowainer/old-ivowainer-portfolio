@@ -33,7 +33,7 @@ const serializer = {
                 {props?.children}
             </Link>
         ),
-        remarkLikeCode: (props: any) => <code>{props.children}</code>,
+        remarkLikeCode: (props: any) => <code className="py-[5px] px-[7px] bg-[#dfe2e6] dark:bg-[#33373a]">{props.children}</code>,
         highlight: (props: any) => <p style={{ backgroundColor: "yellow" }}>{props.children}</p>,
     },
 };

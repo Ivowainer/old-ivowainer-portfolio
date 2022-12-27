@@ -14,13 +14,13 @@ module.exports = {
             typography: {
                 DEFAULT: {
                     css: {
-                        code: {
+                        /* code: {
                             fontSize: em(12, 14),
                             lineHeight: round(20 / 12),
                             borderRadius: rem(4),
                             padding: "7px 5px",
                             backgroundColor: "#dfe2e6",
-                        },
+                        }, */
                         "code::before": {
                             content: '""',
                         },
@@ -54,13 +54,13 @@ module.exports = {
                         "code::after": {
                             content: '""',
                         },
-                        code: {
+                        /* code: {
                             fontSize: em(12, 14),
                             lineHeight: round(20 / 12),
                             borderRadius: rem(4),
                             padding: "7px 5px",
                             backgroundColor: "#33373a",
-                        },
+                        }, */
                     },
                 },
             },
