@@ -25,12 +25,12 @@ const Blog = ({ posts, categories }: EntriesType) => {
     return (
         <MainLayout pageName="Blog" pageDescription="Look the last post from IvoWainer Portfolio!" post={false}>
             <div className="px-6 lg:px-20 pt-6 lg:pt-10 pb-8 min-h-screen dark:bg-gray-700">
-                <p className="dark:text-gray-300 text-gray-600 font-bold text-4xl">✍️ Escritos</p>
+                <p className="dark:text-gray-300 text-gray-600 font-bold text-4xl">✍️ Writes</p>
 
                 <div className="mt-8 lg:mt-16 flex flex-col lg:flex-row gap-16 lg:gap-0 w-full justify-between">
                     <div className="w-full lg:w-4/6 px-8 lg:px-10">
                         <div className="border-b pb-2 border-gray-500">
-                            <p className="font-bold text-emerald-600 text-4xl">Últimas publicaciones</p>
+                            <p className="font-bold text-emerald-600 text-4xl">Last posts</p>
                         </div>
                         <div className="mt-8 flex flex-col gap-4">
                             {posts.map((value) => (
@@ -46,7 +46,7 @@ const Blog = ({ posts, categories }: EntriesType) => {
                     </div>
 
                     <div className="flex flex-col w-full lg:w-1/4 p-6 gap-8 rounded-lg bg-[#f1f1f1] border-2 dark:border-[#3b4555] dark:bg-[#2f3846]">
-                        <p className="font-bold tracking-[1px] text-sm">CATEGORIAS</p>
+                        <p className="font-bold tracking-[1px] text-sm">CATEGORIES</p>
                         <div className="flex flex-col gap-1 capitalize">
                             {categories.map((val) => (
                                 <Category key={val.category} name={val.category} number={getIndexCategory(categoryNumber, val.category)} />
