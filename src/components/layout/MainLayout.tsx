@@ -21,6 +21,7 @@ const MainLayout = ({ children, pageName, post, pageDescription }: MainLayoutPro
                 <meta name="copyright" content="Ivan Campos Wainer" />
                 <meta name="keywords" content={`${pageName}, programación, technologies, portfolio, how, build, nextjs, react`} />
 
+                <meta name="google-site-verification" content="osdxF6ciMVEp_Q0vYKwuLttS8Kpya99v3_UOVa6oIys" />
                 <meta name="robots" content="index" />
 
                 <meta property="og:title" content={`${pageName}`} />
