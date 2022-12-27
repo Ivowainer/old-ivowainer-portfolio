@@ -3,21 +3,13 @@ import Image from "next/image";
 
 import axios from "axios";
 
-import MainLayout from "../../components/layout/MainLayout";
-
 import { EntriesType, getEntriesType } from "../../types/EntriesTypes";
 
 import PortableText from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 import BlogLayout from "../../components/layout/BlogLayout";
 import Link from "next/link";
-
-import Prism from "prismjs";
 import Code from "../../components/ui/CodeLanguage";
-
-const code = `var data = 1;`;
-
-const html = Prism.highlight(code, Prism.languages.javascript, "javascript");
 
 const urlFor = (source: any) => imageUrlBuilder({ projectId: "54bhdq86", dataset: "production" }).image(source);
 
@@ -30,6 +22,10 @@ const serializer = {
             </figure>
         ),
         break: (props: any) => <hr />,
+        code: ({ node = {} }: any) => {
+            const { code, language } = node;
+            return <Code language={language} code={code} />;
+        },
     },
     marks: {
         link: (props: any) => (

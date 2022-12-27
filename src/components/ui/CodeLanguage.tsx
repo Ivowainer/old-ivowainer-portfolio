@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+
 import Prism from "prismjs";
 
 export default function Code({ code, language }: any) {
@@ -8,7 +9,7 @@ export default function Code({ code, language }: any) {
     return (
         <div className="Code">
             <pre>
-                <code className={`language-${language}`}>{code}</code>
+                <code className={`language-javascript`}>{code}</code>
             </pre>
         </div>
     );
