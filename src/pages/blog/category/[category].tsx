@@ -1,19 +1,19 @@
 import { useState, useEffect } from "react";
 
 import axios from "axios";
-import { GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticProps } from "next";
 
 import Link from "next/link";
 
-import MainLayout from "../../components/layout/MainLayout";
-import Category from "../../components/ui/Blog/Category";
+import MainLayout from "../../../components/layout/MainLayout";
+import Category from "../../../components/ui/Blog/Category";
 
-import { dateFormatter } from "../../helpers/dateFormatter";
+import { dateFormatter } from "../../../helpers/dateFormatter";
 
-import { EntriesType } from "../../types/EntriesTypes";
-import { getIndexCategory } from "../../helpers/getIndexCategory";
+import { EntriesType } from "../../../types/EntriesTypes";
+import { getIndexCategory } from "../../../helpers/getIndexCategory";
 
-const Blog = ({ posts, categories }: EntriesType) => {
+const PageCategory = ({ posts, categories }: EntriesType) => {
     const [categoryNumber, setCategoryNumber] = useState([]);
 
     useEffect(() => {
@@ -30,7 +30,7 @@ const Blog = ({ posts, categories }: EntriesType) => {
                 <div className="mt-8 lg:mt-16 flex flex-col lg:flex-row gap-16 lg:gap-0 w-full justify-between">
                     <div className="w-full lg:w-4/6 px-8 lg:px-10">
                         <div className="border-b pb-2 border-gray-500">
-                            <p className="font-bold text-emerald-600 text-4xl">Last posts</p>
+                            <p className="font-bold text-emerald-600 text-4xl capitalize">{posts[0].categories.category}</p>
                         </div>
                         <div className="mt-8 flex flex-col gap-4">
                             {posts.map((value) => (
@@ -59,12 +59,31 @@ const Blog = ({ posts, categories }: EntriesType) => {
     );
 };
 
-export default Blog;
+export default PageCategory;
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticPaths: GetStaticPaths = async (ctx) => {
+    const {
+        data: { result },
+    } = await axios.get(`${process.env.NEXT_PUBLIC_BLOG_ENTRIES}[_type == 'categories']{category}`);
+
+    const category: string[] = result.map((val: any) => val.category);
+
+    return {
+        paths: category.map((category) => ({
+            params: { category: category.toString() },
+        })),
+        fallback: "blocking",
+    };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+    const { category } = params as { category: string };
+
     const {
         data: { result: posts },
     } = await axios(`${process.env.NEXT_PUBLIC_BLOG_ENTRIES}[_type == 'posts']{categories, authorPost, publishDate, tags, slugPost, titlePost, keywords, descriptionPost, categories->{category}}`);
+
+    const postCategoryFilter = posts.filter((val: any) => val.categories.category.toString().toLowerCase() == category.toString().toLowerCase());
 
     const {
         data: { result: categories },
@@ -72,7 +91,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
         props: {
-            posts,
+            posts: postCategoryFilter,
             categories,
         },
     };

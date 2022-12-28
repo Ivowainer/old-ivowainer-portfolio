@@ -30,8 +30,7 @@ export interface Entry {
 }
 
 export interface Categories {
-    _ref: string;
-    _type: string;
+    category: string;
 }
 
 export interface Content {
