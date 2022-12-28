@@ -45,7 +45,7 @@ const PageCategory = ({ posts, categories, postCategoryFilter }: EntriesType) =>
                         </div>
                     </div>
 
-                    <div className="flex flex-col w-full lg:w-1/4 p-6 gap-8 rounded-lg bg-[#f1f1f1] border-2 dark:border-[#3b4555] dark:bg-[#2f3846]">
+                    <div className="flex flex-col w-full min-h-[50vh] lg:w-1/4 p-6 gap-8 rounded-lg bg-[#f1f1f1] border-2 dark:border-[#3b4555] dark:bg-[#2f3846]">
                         <p className="font-bold tracking-[1px] text-sm">CATEGORIES</p>
                         <div className="flex flex-col gap-1 capitalize">
                             {categories.map((val) => (
