@@ -6,6 +6,7 @@ export interface EntriesType {
     posts: Entry[];
     categories: Category[];
     post: Entry;
+    postCategoryFilter?: Entry[];
 }
 
 export interface Category {

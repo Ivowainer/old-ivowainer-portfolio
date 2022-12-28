@@ -13,14 +13,14 @@ import { dateFormatter } from "../../../helpers/dateFormatter";
 import { EntriesType } from "../../../types/EntriesTypes";
 import { getIndexCategory } from "../../../helpers/getIndexCategory";
 
-const PageCategory = ({ posts, categories }: EntriesType) => {
+const PageCategory = ({ posts, categories, postCategoryFilter }: EntriesType) => {
     const [categoryNumber, setCategoryNumber] = useState([]);
 
     useEffect(() => {
         posts.map((val: any) => {
             setCategoryNumber((oldArray) => [...oldArray, val.categories.category] as any);
         });
-    }, [posts]);
+    }, []);
 
     return (
         <MainLayout pageName="Blog" pageDescription="Look the last post from IvoWainer Portfolio!" post={false}>
@@ -30,10 +30,10 @@ const PageCategory = ({ posts, categories }: EntriesType) => {
                 <div className="mt-8 lg:mt-16 flex flex-col lg:flex-row gap-16 lg:gap-0 w-full justify-between">
                     <div className="w-full lg:w-4/6 px-8 lg:px-10">
                         <div className="border-b pb-2 border-gray-500">
-                            <p className="font-bold text-emerald-600 text-4xl capitalize">{posts[0].categories.category}</p>
+                            <p className="font-bold text-emerald-600 text-4xl capitalize">{postCategoryFilter![0].categories.category}</p>
                         </div>
                         <div className="mt-8 flex flex-col gap-4">
-                            {posts.map((value) => (
+                            {postCategoryFilter!.map((value: any) => (
                                 <div className="" key={value?.titlePost}>
                                     <Link href={`/blog/${value?.slugPost}`} className="flex flex-col sm:flex-row justify-between hover:underline decoration-gray-700 dark:decoration-white">
                                         <p className="font-bold dark:text-gray-400 text-gray-500 text-lg">{value?.titlePost}</p>
@@ -91,7 +91,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
     return {
         props: {
-            posts: postCategoryFilter,
+            postCategoryFilter,
+            posts,
             categories,
         },
     };
