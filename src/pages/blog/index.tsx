@@ -25,7 +25,7 @@ const Blog = ({ posts, categories }: EntriesType) => {
     return (
         <MainLayout pageName="Blog" pageDescription="Look the last post from IvoWainer Portfolio!" post={false}>
             <div className="px-6 lg:px-20 pt-6 lg:pt-10 pb-8 min-h-screen dark:bg-gray-700">
-                <p className="dark:text-gray-300 text-gray-600 font-bold text-4xl">✍️ Writes</p>
+                <h1 className="dark:text-gray-300 text-gray-600 font-bold text-4xl">✍️ Writes</h1>
 
                 <div className="mt-8 lg:mt-16 flex flex-col lg:flex-row gap-16 lg:gap-0 w-full justify-between">
                     <div className="w-full lg:w-4/6 px-8 lg:px-10">

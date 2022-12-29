@@ -5,7 +5,7 @@ const Me = () => {
     return (
         <div className="flex flex-col lg:grid lg:grid-cols-3 text-gray-400 mt-10 text-lg gap-5 items-center justify-items-start">
             <div className="col-start-1 col-end-3 lg:mr-10">
-                <p className="dark:text-gray-300 text-gray-500 text-[1.6rem] font-bold">👋 Hi! Mi name is Iván but you can call me Ivo</p>
+                <h1 className="dark:text-gray-300 text-gray-500 text-[1.6rem] font-bold">👋 Hi! Mi name is Iván but you can call me Ivo</h1>
                 <p className="mt-10">
                     I consider myself a sociable and responsible person, someone who has much to share and receive; I am receptive and completely open to new suggestions and ways of working.
                 </p>
