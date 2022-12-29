@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-Sitemap: http://www.ivancamposwainer.com/api/sitemap
+# Host
+Host: https://ivancamposwainer.com
+
+# Sitemaps
+Sitemap: https://ivancamposwainer.com/sitemap.xml
