@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Link from "next/link";
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 
@@ -9,7 +8,11 @@ import IconRS from "../components/ui/IconRS";
 
 const Home: NextPage = () => {
     return (
-        <MainLayout pageName="Home" pageDescription="Welcome to my Home Page!" post={false}>
+        <MainLayout
+            pageName="Home"
+            pageDescription="Ivan Campos Wainer is a Frontend Web Developer who specializes in building exceptional digital experiences. Welcome to my digital garden."
+            post={false}
+        >
             <div className="relative h-screen lg:h-screen flex flex-col w-full items-center justify-center dark:text-gray-200 text-gray-600">
                 <h1 className="text-4xl font-bold">Ivan Campos Wainer</h1>
                 <p className="text-xl font-semibold dark:text-gray-400 text-gray-400">

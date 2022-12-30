@@ -22,13 +22,20 @@ const BlogLayout = ({ children, pageName, post, pageDescription, blogName, keyWo
                 <meta name="author" content="Ivan Campos Wainer" />
                 <meta name="description" content={`About the post ${pageDescription}`} />
                 <meta name="copyright" content="Ivan Campos Wainer" />
-                <meta name="keywords" content={`${pageName}, ${keyWords}`} />
+                <meta name="image" content="https://www.ivancamposwainer.com/blogLogo.png" />
+                <meta name="url" content="https://www.ivancamposwainer.com" />
+                <meta name="keywords" content={`${pageName}, ${blogName}, ${keyWords}`} />
 
                 <meta name="robots" content="index" />
 
-                <meta property="og:title" content={`Look the post of Ivan Campos Wainer: "${blogName}"`} />
+                <meta property="og:title" content={`${blogName} | Ivan Campos Wainer`} />
                 <meta property="og:description" content={`${pageDescription}`} />
-                <meta property="og:image" content={`/blogLogo.png`} />
+                <meta property="og:image" content={`https://www.ivancamposwainer.com/blogLogo.png`} />
+
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="Ivan Campos Wainer" />
+                <meta name="twitter:description" content="Ivan Campos Wainer is a Frontend Web Developer who specializes in building exceptional digital experiences. Welcome to my digital garden." />
+                <meta name="twitter:image" content={`https://www.ivancamposwainer.com/blogLogo.png`} />
 
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
             </Head>
