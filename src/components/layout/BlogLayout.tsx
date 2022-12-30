@@ -31,6 +31,10 @@ const BlogLayout = ({ children, pageName, post, pageDescription, blogName, keyWo
                 <meta property="og:title" content={`${blogName} | Ivan Campos Wainer`} />
                 <meta property="og:description" content={`${pageDescription}`} />
                 <meta property="og:image" content={`https://www.ivancamposwainer.com/blogLogo.png`} />
+                <meta property="og:url" content={`https://www.ivancamposwainer.com`} />
+                <meta property="og:type" content="article" />
+
+                <meta property="fb:app_id" content="710360040603207" />
 
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content="Ivan Campos Wainer" />

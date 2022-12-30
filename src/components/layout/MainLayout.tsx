@@ -28,6 +28,10 @@ const MainLayout = ({ children, pageName, post, pageDescription }: MainLayoutPro
                 <meta property="og:title" content={`${pageName} | Ivan Campos Wainer`} />
                 <meta property="og:description" content={`${pageDescription}`} />
                 <meta property="og:image" content={`https://www.ivancamposwainer.com/mainLogo.png`} />
+                <meta property="og:url" content={`https://www.ivancamposwainer.com`} />
+                <meta property="og:type" content="article" />
+
+                <meta property="fb:app_id" content="710360040603207" />
 
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content="Ivan Campos Wainer" />
