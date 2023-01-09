@@ -23,7 +23,7 @@ const WorkCard = ({ charge, date, description, imageUrl, textPoints }: WorkCardP
                 </ul>
             </div>
             <div className="w-full mt-6 image-to-green">
-                <Image width={150} height={300} className="w-1/6" src={imageUrl} alt={`Image Logo Project Work Experience Ivan Campos Wainer`} />
+                <Image width={150} height={300} className="w-1/4 lg:w-1/6" src={imageUrl} alt={`Image Logo Project Work Experience Ivan Campos Wainer`} />
             </div>
         </Link>
     );
