@@ -23,7 +23,7 @@ const PageCategory = ({ posts, categories, postCategoryFilter }: EntriesType) =>
     }, []);
 
     return (
-        <MainLayout pageName="Blog" pageDescription="Look the last post from IvoWainer Portfolio!" post={false}>
+        <MainLayout pageName="Blog" pageDescription="Look the last post from Ivan Campos Wainer Portfolio!" post={false}>
             <div className="px-6 lg:px-20 pt-6 lg:pt-10 pb-8 min-h-screen dark:bg-gray-700">
                 <p className="dark:text-gray-300 text-gray-600 font-bold text-4xl">✍️ Writes</p>
 

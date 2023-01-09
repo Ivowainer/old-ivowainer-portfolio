@@ -3,8 +3,9 @@ import Education from "../components/ui/About/Education/Education";
 import Technologies from "../components/ui/About/Technologies/Technologies";
 import Projects from "../components/ui/About/Projects/Projects";
 import AboutIndex from "../components/ui/About/AboutIndex";
+import WorkIndex from "../components/ui/About/Works/WorkIndex";
 
-const about = () => {
+const About = () => {
     return (
         <MainLayout
             pageName="About"
@@ -13,12 +14,15 @@ const about = () => {
         >
             <div className="pt-6 lg:pt-6 pb-8">
                 <AboutIndex />
-                <Technologies />
-                <Projects />
-                <Education />
+                <div className="px-4 lg:px-24 flex flex-col gap-32">
+                    <Technologies />
+                    <WorkIndex />
+                    <Projects />
+                    <Education />
+                </div>
             </div>
         </MainLayout>
     );
 };
 
-export default about;
+export default About;
