@@ -4,7 +4,7 @@ import WorkCard from "./WorkCard";
 
 const WorkData: WorkCardProps[] = [
     {
-        charge: "Frontend Developer Freelance",
+        charge: "Fullstack Developer Freelance",
         date: "December 2022 - January 2023",
         description: 'Development and integration of customized IT solutions for "Clinica Selva Amazonica"',
         imageUrl: "/projects/selvamazonica_logo.png",

@@ -38,7 +38,7 @@ const BlogLayout = ({ children, pageName, post, pageDescription, blogName, keyWo
 
                 <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content="Ivan Campos Wainer" />
-                <meta name="twitter:description" content="Ivan Campos Wainer is a Frontend Web Developer who specializes in building exceptional digital experiences. Welcome to my digital garden." />
+                <meta name="twitter:description" content="Ivan Campos Wainer is a Fullstack Web Developer who specializes in building exceptional digital experiences. Welcome to my digital garden." />
                 <meta name="twitter:image" content={`https://www.ivancamposwainer.com/blogLogo.png`} />
 
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />

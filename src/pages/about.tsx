@@ -9,7 +9,7 @@ const About = () => {
     return (
         <MainLayout
             pageName="About"
-            pageDescription="Ivan Campos Wainer is a Frontend Web Developer who specializes in building exceptional digital experiences. Welcome to my digital garden."
+            pageDescription="Ivan Campos Wainer is a Fullstack Web Developer who specializes in building exceptional digital experiences. Welcome to my digital garden."
             post={false}
         >
             <div className="pt-6 lg:pt-6 pb-8">
