@@ -1,6 +1,6 @@
 import CardStack from "./CardStack";
 
-const FullstackStack = () => {
+const FrontendStack = () => {
     return (
         <div>
             <p className="py-3 dark:bg-gray-600 dark:text-gray-200 bg-gray-200 text-gray-500 font-bold rounded-t-lg text-center">Front-End Stack</p>{" "}
@@ -20,4 +20,4 @@ const FullstackStack = () => {
     );
 };
 
-export default FullstackStack;
+export default FrontendStack;
