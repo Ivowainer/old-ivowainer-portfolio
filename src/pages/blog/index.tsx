@@ -23,7 +23,11 @@ const Blog = ({ posts, categories }: EntriesType) => {
     }, [posts]);
 
     return (
-        <MainLayout pageName="Blog" pageDescription="Look the last post from Ivan Campos Wainer!" post={false}>
+        <MainLayout
+            pageName="Blog"
+            pageDescription="Welcome to my blog! I am Ivan Campos Wainer, a fullstack developer; I like to write down the knowledge I acquire and share it with the community. If you feel part of it, I invite you to read my latest posts, I'm sure they will be useful to you!"
+            post={false}
+        >
             <div className="px-6 lg:px-20 pt-6 lg:pt-10 pb-8 min-h-screen dark:bg-gray-700">
                 <h1 className="dark:text-gray-300 text-gray-600 font-bold text-4xl">✍️ Writes</h1>
 

@@ -20,7 +20,7 @@ const BlogLayout = ({ children, pageName, post, pageDescription, blogName, keyWo
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
                 <meta name="author" content="Ivan Campos Wainer" />
-                <meta name="description" content={`About the post ${pageDescription}`} />
+                <meta name="description" content={`I invite you to see the last entry that has been published on Ivan Campos Wainer's blog! Look at the post:${pageDescription}`} />
                 <meta name="copyright" content="Ivan Campos Wainer" />
                 <meta name="image" content="https://www.ivancamposwainer.com/blogLogo.png" />
                 <meta name="url" content="https://www.ivancamposwainer.com" />
