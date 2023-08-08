@@ -10,6 +10,13 @@ export interface ProjectsInterface {
 
 export const PROJECTS: ProjectsInterface[] = [
     {
+        name: "CW Ecommerce Shop",
+        description: "It is an ecommerce with full experience. Data persistence, user management and roles. Checkout and payment methods",
+        github: "https://github.com/Ivowainer/cw-shop",
+        link: "cwecommerce.ivancamposwainer.com/",
+        languages: ["Tailwind", "Typescript", "JWT", "MongoDB", "NextJS", "NextAuth"],
+    },
+    {
         name: "ManageWainer",
         link: "https://wainermanager.netlify.app/",
         github: "https://github.com/Ivowainer/ManageWainer_mern",
